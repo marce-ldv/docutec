@@ -42,7 +42,7 @@ const ProductsSection: FunctionComponent<Props> = (props) => {
 
 	return (
 		<div className={classes.root}>
-			<Grid container xs={12} justify={'center'}>
+			<Grid container justify={'center'}>
 				<div>
 					<Typography variant="h2">Nuestros productos</Typography>
 					<Typography>Far far away, behind the word mountains, far from the countries Vokalia and

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://docutec.vercel.app/sitemap_index.html

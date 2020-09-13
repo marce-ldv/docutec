@@ -1,3 +1,12 @@
-Docutec
+# Docutec
+Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras.
 
-https://docutec.vercel.app/
+**SITE:** https://docutec.vercel.app/
+
+## 🧾 License 
+The MIT License (MIT)
+
+## 💻 Technologies:
+* React
+* NextJS
+* Typescript

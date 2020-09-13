@@ -18,8 +18,10 @@ class MyDocument extends Document {
 		return (
 			<Html lang="es">
 				<Head title={'Docutec Mdp'}>
-					<meta name="google-site-verification" content="40xpsLPhX8g30ImASZvllemNkbwj05_GGTVbqiabX8s" />
-					<meta name="msvalidate.01" content="8374C2018616D0808646CCCAC5E579A7" />
+					<meta name="google-site-verification" content="40xpsLPhX8g30ImASZvllemNkbwj05_GGTVbqiabX8s"/>
+					<meta name="msvalidate.01" content="8374C2018616D0808646CCCAC5E579A7"/>
+					<meta name="description" content="Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras."/>
+					<title>Docutec Mdp</title>
 				</Head>
 				<body>
 				<Main/>
