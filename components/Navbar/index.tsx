@@ -25,7 +25,7 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 		},
 		logo: {
 			flexGrow: 1,
-			width: 100
+			width: 100,
 		}
 	})
 );
@@ -38,16 +38,16 @@ const Navbar: FunctionComponent<Props> = (props) => {
 		<AppBar position="static" className={classes.root}>
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
-					<img src="/assets/docutec2.png" width={100}/>
+					<img src="/assets/docutec2.png" width={100} alt="docutec"/>
 				</div>
 				<Link href="/">
-					<Typography className={classes.title}>Home</Typography>
+					<Typography className={classes.title}>Inicio</Typography>
 				</Link>
 				<Link href="/contact">
-					<Typography className={classes.title}>Contact</Typography>
+					<Typography className={classes.title}>Contacto</Typography>
 				</Link>
 				<Link href="/about">
-					<Typography className={classes.title}>About</Typography>
+					<Typography className={classes.title}>Acerca de</Typography>
 				</Link>
 			</Toolbar>
 		</AppBar>
