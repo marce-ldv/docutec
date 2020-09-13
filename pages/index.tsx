@@ -2,6 +2,7 @@ import React, {FunctionComponent} from 'react';
 import {makeStyles}               from '@material-ui/core/styles';
 import {CustomTheme}              from '@theme/index';
 import Aside                      from '@components/Aside';
+import ProductsSection            from '@components/ProductsSection';
 
 interface OwnProps {
 }
@@ -27,6 +28,7 @@ const Home: FunctionComponent<Props> = (props) => {
 				<img src="/assets/landing.jpg" width="100%" alt="header" />
 			</div>
 			<Aside />
+			<ProductsSection />
 		</div>
 	);
 };

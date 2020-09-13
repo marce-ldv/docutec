@@ -15,6 +15,7 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 		root: {
 			marginLeft: 'auto',
 			marginRight: 'auto',
+			marginTop: '30px',
 		},
 		video: {},
 		wrapAside: {
