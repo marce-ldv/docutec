@@ -13,8 +13,6 @@ type Props = OwnProps;
 const useStyles = makeStyles<CustomTheme>((theme) =>
 	({
 		root: {
-			marginLeft: 'auto',
-			marginRight: 'auto',
 			marginTop: '30px',
 		},
 		video: {},
@@ -32,16 +30,12 @@ const Aside: FunctionComponent<Props> = (props) => {
 	return (
 		<section className={classes.root}>
 			<Grid container justify={'center'}>
-				<Grid item xs={4} className={classes.video}>
+				<Grid item xs={12} md={6} lg={6} className={classes.video}>
 					<ReactPlayer url="https://www.youtube.com/watch?v=BzJDMguJw9U" playing={true}/>
 				</Grid>
-				<Grid item xs={6} className={classes.wrapAside}>
-					<Typography variant="h2">Bienvenidos a Docutec</Typography>
-					<Typography>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque autem dolore, eaque laborum
-						rem veniam? Aperiam aspernatur hic illum laborum mollitia recusandae sed sequi sunt veniam voluptates!
-						Distinctio eaque est explicabo ipsum reiciendis sapiente temporibus veniam! Aliquid culpa deleniti dolorum
-						eum id incidunt molestiae nam nesciunt odit porro quia, tempora. Aut numquam omnis placeat recusandae,
-						repudiandae sequi velit vero?</Typography>
+				<Grid item xs={12} md={6} lg={6} className={classes.wrapAside}>
+					<Typography variant="h2">Bienvenidos a Docutec Mdp</Typography>
+					<Typography>La calidad de nuestro servicio es uno de los aspectos más importantes de nuestro crecimiento, por lo que de forma continua desarrollamos programas y procesos internos de mejora</Typography>
 				</Grid>
 			</Grid>
 

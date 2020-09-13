@@ -5,7 +5,7 @@ import theme           from '../theme'
 import '../theme/stylesheetsGlobal.css'
 
 export function reportWebVitals(metric: any){
-	console.log(metric)
+	// console.log(metric)
 }
 
 function MyApp({Component, pageProps}: AppProps) {

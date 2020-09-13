@@ -16,6 +16,7 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 	({
 		root: {
 			background: theme.colors.main,
+			width: '100%',
 		},
 		title: {
 			marginRight: theme.spacing(2)
@@ -38,7 +39,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
 		<AppBar position="static" className={classes.root}>
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
-					<img src="/assets/docutec2.png" width={100} alt="docutec"/>
+					<Link href="/">
+						<img src="/assets/docutec2.png" width={100} alt="docutec"/>
+					</Link>
 				</div>
 				<Link href="/">
 					<Typography className={classes.title}>Inicio</Typography>

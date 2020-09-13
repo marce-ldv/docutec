@@ -48,10 +48,10 @@ const ProductsSection: FunctionComponent<Props> = (props) => {
 					<Typography>Far far away, behind the word mountains, far from the countries Vokalia and
 						Consonantia</Typography>
 				</div>
-				<Grid item xs={8} className={classes.productsContainer}>
+				<Grid item xs={12} md={12} lg={8} className={classes.productsContainer}>
 					<Grid container>
 						{products?.map((product, key) => (
-							<Grid key={key} item xs={12} md={3}>
+							<Grid key={key} item xs={12} md={6} lg={4}>
 								<Printer
 									id={product.id}
 									name={product.name}
