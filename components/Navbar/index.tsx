@@ -15,11 +15,13 @@ type Props = OwnProps;
 const useStyles = makeStyles<CustomTheme>((theme) =>
 	({
 		root: {
-			background: theme.colors.main,
+			background: '#fff',
 			width: '100%',
 		},
 		title: {
-			marginRight: theme.spacing(2)
+			marginRight: theme.spacing(2),
+			color: theme.colors.main,
+			cursor: 'pointer',
 		},
 		toolbar: {
 			display: 'flex',
@@ -36,7 +38,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
 	const classes = useStyles();
 
 	return (
-		<AppBar position="static" className={classes.root}>
+		<AppBar position="fixed" className={classes.root}>
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
 					<Link href="/">
