@@ -16,8 +16,8 @@ class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
-				<Head />
+			<Html lang="es">
+				<Head title={'Docutec Mdp'} />
 				<body>
 				<Main/>
 				<NextScript/>

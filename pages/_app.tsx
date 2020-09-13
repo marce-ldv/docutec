@@ -4,6 +4,10 @@ import {ThemeProvider} from '@material-ui/core'
 import theme           from '../theme'
 import '../theme/stylesheetsGlobal.css'
 
+export function reportWebVitals(metric: any){
+	console.log(metric)
+}
+
 function MyApp({Component, pageProps}: AppProps) {
 	return (
 		<ThemeProvider theme={theme}>
