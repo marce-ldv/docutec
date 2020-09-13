@@ -17,7 +17,9 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="es">
-				<Head title={'Docutec Mdp'} />
+				<Head title={'Docutec Mdp'}>
+					<meta name="google-site-verification" content="40xpsLPhX8g30ImASZvllemNkbwj05_GGTVbqiabX8s" />
+				</Head>
 				<body>
 				<Main/>
 				<NextScript/>
