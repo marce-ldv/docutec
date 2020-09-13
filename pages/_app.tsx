@@ -1,7 +1,8 @@
 import {AppProps}      from 'next/app'
 import Layout          from '@components/Layout'
-import {ThemeProvider} from '@material-ui/core';
+import {ThemeProvider} from '@material-ui/core'
 import theme           from '../theme'
+import '../theme/stylesheetsGlobal.css'
 
 function MyApp({Component, pageProps}: AppProps) {
 	return (

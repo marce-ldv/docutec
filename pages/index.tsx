@@ -12,14 +12,6 @@ const Home: FunctionComponent<Props> = (props) => {
 			<div>
 				Home
 			</div>
-			<style jsx global>
-				{`
-					html, body {
-						padding: 0;
-						margin: 0;
-					}
-			`}
-			</style>
 		</div>
 	);
 };

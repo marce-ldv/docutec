@@ -3,7 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "@database": ["database/db.ts"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@theme/*": ["theme/*"],
+      "@pages/*": ["pages/*"]
     },
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
