@@ -5,7 +5,8 @@
       "@database": ["database/db.ts"],
       "@components/*": ["components/*"],
       "@theme/*": ["theme/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"]
     },
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
