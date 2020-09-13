@@ -10,3 +10,6 @@ The MIT License (MIT)
 * React
 * NextJS
 * Typescript
+
+## Author:
+* Marcelo Ludovino
