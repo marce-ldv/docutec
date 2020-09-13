@@ -9,8 +9,8 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import Typography      from '@material-ui/core/Typography';
 import {makeStyles}    from '@material-ui/core/styles';
 import Container       from '@material-ui/core/Container';
-import {CustomTheme}   from '@theme/index';
-import {schema}        from '@pages/contact/validations';
+import {CustomTheme} from '@theme/index';
+import {schema}      from '@utils/validations/contactForm';
 
 interface OwnProps {
 }
