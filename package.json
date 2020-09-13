@@ -28,8 +28,6 @@
     "typescript": "^3.9.3"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn type-check"
-    }
+    "hooks": {}
   }
 }
