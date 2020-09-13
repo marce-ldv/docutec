@@ -62,10 +62,11 @@ const Contact: FunctionComponent<Props> = (props) => {
 
 	const sendEmail = async (e: any) => {
 		e.preventDefault()
+		const mailTo = 'docutecmdp@yahoo.com'
 
 		try {
 			await schema.validate({ name, email })
-			window.open(`mailto:marcelo.docutec@gmail.com?subject=${subject}&body=${message}`)
+			window.open(`mailto:${mailTo}?subject=${subject}&body=${message}`)
 		}catch (e) {
 			console.log('err validations', e)
 		}
