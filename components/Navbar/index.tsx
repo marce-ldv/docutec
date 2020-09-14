@@ -3,8 +3,8 @@ import Link                       from 'next/link';
 import {makeStyles}               from '@material-ui/core/styles';
 import AppBar                     from '@material-ui/core/AppBar';
 import Toolbar                    from '@material-ui/core/Toolbar';
-import {CustomTheme}              from '../../theme';
-import {Typography}               from '@material-ui/core';
+import {CustomTheme}           from '../../theme';
+import {Container, Typography} from '@material-ui/core';
 
 
 interface OwnProps {
@@ -17,12 +17,6 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 		root: {
 			background: '#fff',
 			width: '100%',
-			// [theme.breakpoints.down('sm')]: {
-			// 	width: '150px',
-			// },
-			// [theme.breakpoints.up('md')]: {
-			// 	maxWidth: '1580px'
-			// },
 		},
 		title: {
 			marginRight: theme.spacing(2),
@@ -44,6 +38,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
 
 	return (
 		<AppBar position="fixed" className={classes.root}>
+			<Container>
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
 					<Link href="/">
@@ -60,6 +55,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
 					<Typography className={classes.title}>Acerca de</Typography>
 				</Link>
 			</Toolbar>
+			</Container>
 		</AppBar>
 	)
 };
