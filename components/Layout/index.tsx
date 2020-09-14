@@ -15,7 +15,9 @@ const Layout: FunctionComponent<Props> = ({children}) => {
 		<>
 			<Navbar/>
 			<Container style={{ marginTop: '64px' }}>
-				{children}
+				<div>
+					{children}
+				</div>
 			</Container>
 			<Footer/>
 		</>
