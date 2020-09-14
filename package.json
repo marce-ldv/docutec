@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "docutec",
   "author": "marce-ldv",
   "private": true,
@@ -18,7 +18,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "clsx": "^1.1.1",
-    "next": "^9.4.2",
+    "next": "^9.5.3",
     "next-pwa": "^3.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
