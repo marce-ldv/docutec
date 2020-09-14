@@ -12,15 +12,15 @@ type Props = OwnProps;
 const Layout: FunctionComponent<Props> = ({children}) => {
 
 	return (
-		<div>
-			<Navbar/>
-			<Grid container justify={'center'} style={{ marginTop: '64px' }}>
+		<>
+			<Grid container justify={'center'} style={{marginTop: '64px'}}>
 				<Grid item xs={12} md={10} lg={10}>
+					<Navbar/>
 					{children}
 				</Grid>
 			</Grid>
 			<Footer/>
-		</div>
+		</>
 	);
 };
 

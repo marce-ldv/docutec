@@ -17,6 +17,12 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 		root: {
 			background: '#fff',
 			width: '100%',
+			// [theme.breakpoints.down('sm')]: {
+			// 	width: '150px',
+			// },
+			// [theme.breakpoints.up('md')]: {
+			// 	maxWidth: '1580px'
+			// },
 		},
 		title: {
 			marginRight: theme.spacing(2),
@@ -28,7 +34,6 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 		},
 		logo: {
 			flexGrow: 1,
-			width: 100,
 		}
 	})
 );
@@ -42,7 +47,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
 					<Link href="/">
-						<img src="/assets/docutec2.png" width={100} alt="docutec"/>
+						<img src="/assets/docutec2.png" width={150} alt="docutec"/>
 					</Link>
 				</div>
 				<Link href="/">
