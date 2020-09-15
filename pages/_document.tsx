@@ -41,6 +41,25 @@ class MyDocument extends Document {
 
 					<link rel='manifest' href='/manifest.json'/>
 					<link rel='shortcut icon' href='/assets/favicon.ico'/>
+					<link rel='apple-touch-icon' sizes='180x180' href='/assets/logo.webp' />
+					<link rel='icon' type='image/png' sizes='32x32' href='/assets/logo.webp' />
+					<link rel='icon' type='image/png' sizes='16x16' href='/assets/logo.webp' />
+					<link rel='mask-icon' href='/assets/logo.webp' color='#5bbad5' />
+					<link rel='shortcut icon' href='/assets/favicon.ico' />
+
+
+					<meta name='twitter:card' content='summary' />
+					<meta name='twitter:url' content='https://docutec.vercel.app' />
+					<meta name='twitter:title' content='Docutec Mdp' />
+					<meta name='twitter:description' content='Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras.' />
+					<meta name='twitter:image' content='https://docutec.vercel.app/static/icons/android-chrome-192x192.png' />
+					<meta name='twitter:creator' content='@DavidWShadow' />
+					<meta property='og:type' content='website' />
+					<meta property='og:title' content='Docutec Mdp' />
+					<meta property='og:description' content='Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras.' />
+					<meta property='og:site_name' content='PWA App' />
+					<meta property='og:url' content='https://docutec.vercel.app' />
+					<meta property='og:image' content='https://docutec.vercel.app/static/icons/apple-touch-icon.png' />
 					
 				</Head>
 				<body>
