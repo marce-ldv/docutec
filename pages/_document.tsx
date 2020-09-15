@@ -41,11 +41,16 @@ class MyDocument extends Document {
 
 					<link rel='manifest' href='/manifest.json'/>
 					<link rel='shortcut icon' href='/assets/favicon.ico'/>
+					<link rel='apple-touch-icon' sizes='180x180' href='/assets/logo.png' />
 					<link rel='apple-touch-icon' sizes='180x180' href='/assets/logo.webp' />
+					<link rel='icon' type='image/png' sizes='32x32' href='/assets/logo.png' />
 					<link rel='icon' type='image/png' sizes='32x32' href='/assets/logo.webp' />
+					<link rel='icon' type='image/png' sizes='16x16' href='/assets/logo.png' />
 					<link rel='icon' type='image/png' sizes='16x16' href='/assets/logo.webp' />
 					<link rel='mask-icon' href='/assets/logo.webp' color='#5bbad5' />
+					<link rel='mask-icon' href='/assets/logo.png' color='#5bbad5' />
 					<link rel='shortcut icon' href='/assets/favicon.ico' />
+					<link rel='shortcut icon' href='/assets/favicon.png' />
 
 
 					<meta name='twitter:card' content='summary' />
