@@ -25,7 +25,7 @@ const Home: FunctionComponent<Props> = (props) => {
 	return (
 		<div>
 			<div className={classes.header}>
-				<img src="/assets/landing.webp" width="100%" alt="header" />
+				<img src="/assets/landing.png" width="100%" alt="header" />
 			</div>
 			<Aside />
 			<ProductsSection />

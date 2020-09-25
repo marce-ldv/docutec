@@ -42,7 +42,12 @@ const Navbar: FunctionComponent<Props> = (props) => {
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.logo}>
 					<Link href="/">
-						<img src="/assets/docutec2.webp" width={150} alt="docutec"/>
+						<picture>
+							<source srcSet="/assets/docutec2.webp" width={150} alt="docutec"/>
+
+							{/*fallback*/}
+							<img src="/assets/docutec2.png" width={150} alt="docutec"/>
+						</picture>
 					</Link>
 				</div>
 				<Link href="/">
