@@ -43,7 +43,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
 				<div className={classes.logo}>
 					<Link href="/">
 						<picture>
-							<source srcSet="/assets/docutec2.webp" width={150} alt="docutec"/>
+							<source srcSet="/assets/docutec2.webp" />
 
 							{/*fallback*/}
 							<img src="/assets/docutec2.png" width={150} alt="docutec"/>

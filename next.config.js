@@ -4,5 +4,18 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     disable: process.env.NODE_ENV === 'development',
-  }
+  },
+  async headers() {
+    return [
+      {
+        source: '/',
+        headers: [
+          {
+            key: 'charset',
+            value: 'utf-8',
+          },
+        ],
+      },
+    ]
+  },
 })
