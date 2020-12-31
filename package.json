@@ -11,7 +11,8 @@
     "dev:inspect": "NODE_OPTIONS='--inspect' next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "export":  "next export"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
