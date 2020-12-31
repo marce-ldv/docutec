@@ -1,7 +1,7 @@
 # Docutec
 Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras.
 
-**SITE:** https://docutecmdp.com
+**SITE:** https://www.docutecmdp.com/
 
 ## 🧾 License 
 The MIT License (MIT)
