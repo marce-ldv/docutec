@@ -1,7 +1,7 @@
 # Docutec
 Servicio tecnico de reparacion y manimiento de impresoras y fotocopiadoras.
 
-**SITE:** https://docutec.vercel.app/
+**SITE:** https://docutecmdp.com
 
 ## 🧾 License 
 The MIT License (MIT)
@@ -10,6 +10,10 @@ The MIT License (MIT)
 * React
 * NextJS
 * Typescript
+
+## Deploy
+* Netlify
+* Github Actions
 
 ## Author:
 * Marcelo Ludovino
