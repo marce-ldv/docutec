@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build project
-        run: npm run build
+        run: yarn install && yarn run build
 
       - name: Heroku Action
         # You may pin to the exact commit or the version.
