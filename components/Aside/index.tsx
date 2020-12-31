@@ -31,7 +31,6 @@ const Aside: FunctionComponent<Props> = (props) => {
 			<Typography variant="h2">Bienvenidos a Docutec Mdp</Typography>
 			<Typography>La calidad de nuestro servicio es uno de los aspectos más importantes de nuestro crecimiento, por lo
 				que de forma continua desarrollamos programas y procesos internos de mejora</Typography>
-
 		</section>
 	);
 };

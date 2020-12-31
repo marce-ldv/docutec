@@ -53,6 +53,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
 				<Link href="/">
 					<Typography className={classes.title}>Inicio</Typography>
 				</Link>
+				<Link href="/products">
+					<Typography className={classes.title}>Productos</Typography>
+				</Link>
 				<Link href="/contact">
 					<Typography className={classes.title}>Contacto</Typography>
 				</Link>
