@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react';
-import {Typography}                 from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 
-interface OwnProps {}
+interface OwnProps { }
 
 type Props = OwnProps;
 
 const index: FunctionComponent<Props> = (props) => {
-  
-  return (
+
+	return (
 		<Typography variant="h2">404 - Pagina no encontrada</Typography>
 	);
 };

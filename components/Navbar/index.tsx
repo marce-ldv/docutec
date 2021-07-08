@@ -15,12 +15,12 @@ type Props = OwnProps;
 const useStyles = makeStyles<CustomTheme>((theme) =>
 	({
 		root: {
-			background: '#fff',
+			background: theme.palette.primary.navbar,
 			width: '100%',
 		},
 		title: {
 			marginRight: theme.spacing(2),
-			color: theme.colors.main,
+			color: '#000',
 			cursor: 'pointer',
 		},
 		toolbar: {
