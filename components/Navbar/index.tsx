@@ -1,71 +1,52 @@
-import React, {FunctionComponent} from 'react';
-import Link                       from 'next/link';
-import {makeStyles}               from '@material-ui/core/styles';
-import AppBar                     from '@material-ui/core/AppBar';
-import Toolbar                    from '@material-ui/core/Toolbar';
-import {CustomTheme}           from '../../theme';
-import {Container, Typography} from '@material-ui/core';
-
+import React, { useState, FunctionComponent } from 'react'
+import Link from 'next/link'
+import styled from 'styled-components'
 
 interface OwnProps {
 }
 
 type Props = OwnProps;
 
-const useStyles = makeStyles<CustomTheme>((theme) =>
-	({
-		root: {
-			background: '#fff',
-			width: '100%',
-		},
-		title: {
-			marginRight: theme.spacing(2),
-			color: theme.colors.main,
-			cursor: 'pointer',
-		},
-		toolbar: {
-			display: 'flex',
-		},
-		logo: {
-			flexGrow: 1,
-		}
-	})
-);
+const NavbarC: FunctionComponent<Props> = (props) => {
+	const [isOpen, setIsOpen] = useState(false);
 
-const Navbar: FunctionComponent<Props> = (props) => {
-
-	const classes = useStyles();
+	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<AppBar position="fixed" className={classes.root}>
-			<Container>
-			<Toolbar className={classes.toolbar}>
-				<div className={classes.logo}>
-					<Link href="/">
-						<picture>
-							<source srcSet="/assets/docutec2.webp" />
+		<NavbarContainer>
+			<Link href="/">
+				<NavItem>Inicio</NavItem>
+			</Link>
+			<Link href="/products">
+				<NavItem>Productos</NavItem>
+			</Link>
+			<Link href="/contact">
+				<NavItem>Contact</NavItem>
+			</Link>
+			<Link href="/about">
+				<NavItem>Acerca de</NavItem>
+			</Link>
+		</NavbarContainer>
+	);
+}
 
-							{/*fallback*/}
-							<img src="/assets/docutec2.png" width={150} alt="docutec"/>
-						</picture>
-					</Link>
-				</div>
-				<Link href="/">
-					<Typography className={classes.title}>Inicio</Typography>
-				</Link>
-				<Link href="/products">
-					<Typography className={classes.title}>Productos</Typography>
-				</Link>
-				<Link href="/contact">
-					<Typography className={classes.title}>Contacto</Typography>
-				</Link>
-				<Link href="/about">
-					<Typography className={classes.title}>Acerca de</Typography>
-				</Link>
-			</Toolbar>
-			</Container>
-		</AppBar>
-	)
-};
+export default NavbarC;
 
-export default Navbar;
+export const NavbarContainer = styled.nav`
+	font-size: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	height: 3.5rem;
+	background-color: ${({ theme }) => theme.primary};
+	/* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const NavItem = styled.nav`
+	font-size: 18px;
+	color: ${({ theme }) => theme.text}
+`;

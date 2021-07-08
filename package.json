@@ -12,18 +12,15 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "type-check": "tsc --noEmit",
-    "export":  "next export"
+    "export": "next export"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
     "clsx": "^1.1.1",
     "next": "^9.5.3",
     "next-pwa": "^3.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-player": "^2.6.2",
+    "styled-components": "^5.3.0",
     "yup": "^0.29.3"
   },
   "devDependencies": {

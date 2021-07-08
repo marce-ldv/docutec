@@ -1,7 +1,6 @@
 import React, {FunctionComponent} from 'react';
-import Navbar                     from '@components/Navbar';
-import Footer                     from '@components/Footer/footer';
-import {Container}          from '@material-ui/core';
+import Navbar from '@components/Navbar';
+import Footer from '@components/Footer/footer';
 
 
 interface OwnProps {
@@ -14,11 +13,9 @@ const Layout: FunctionComponent<Props> = ({children}) => {
 	return (
 		<>
 			<Navbar/>
-			<Container style={{ marginTop: '64px' }}>
-				<div>
+			<div style={{ marginTop: '64px' }}>
 					{children}
-				</div>
-			</Container>
+			</div>
 			<Footer/>
 		</>
 	);

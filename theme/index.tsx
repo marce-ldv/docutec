@@ -1,23 +1,35 @@
-import {createMuiTheme, Theme} from '@material-ui/core/styles';
+import { createGlobalStyle } from 'styled-components';
+export const GlobalStyles = createGlobalStyle`
+  body {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: background 0.2s ease-in, color 0.2s ease-in;
+  }
+`;
+export const lightTheme = {
+  body: '#f1f1f1',
+  text: '#121620',
+  primary: '#3f51b5',
+  secondary: '#8b2525',
+  navbar: {
+    main: '#f1f1f1',
+  },
+  font: {
+    primary: '#f1f1f1',
+    secondary: '#121620'
+  }
+};
 
-const materialtheme = createMuiTheme({
-	palette: {},
-});
-
-const customTheme = {
-	colors: {
-		main: '#3f51b5',
-	},
-	font: {},
-	customSpacing: {},
-} as const
-
-function createCustomTheme() {
-	return {...materialtheme, ...customTheme}
-}
-
-export type CustomTheme = Theme & ReturnType<typeof createCustomTheme>;
-
-const theme = createCustomTheme()
-
-export default theme
+export const darkTheme = {
+  body: '#121620',
+  text: '#f1f1f1',
+  primary: '#3f51b5',
+  secondary: '#8b2525',
+  navbar: {
+    main: '#1b1a1a',
+  },
+  font: {
+    primary: '#f1f1f1',
+    secondary: '#121620'
+  }
+};
