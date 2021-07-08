@@ -11,15 +11,20 @@ interface OwnProps {
 type Props = OwnProps;
 
 const useStyles = makeStyles<CustomTheme>(() =>
-  ({
-    root: {
-      marginTop: '30px',
-    },
-    productsContainer: {
-      background: '#eceaea',
-      padding: '10px',
-    },
-  })
+({
+  root: {
+    marginTop: '30px',
+  },
+  productsContainer: {
+    background: '#eceaea',
+    // padding: '10px',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(15rem, 1fr))',
+    gap: '1rem',
+    gridAutoFlow: 'dense',
+    gridAutoRows: '30rem',
+  },
+})
 );
 
 const ProductsSection: FunctionComponent<Props> = (props) => {
@@ -42,27 +47,21 @@ const ProductsSection: FunctionComponent<Props> = (props) => {
 
   return (
     <div className={classes.root}>
-      <Grid container justify={'center'}>
-        <div>
-          <Typography variant="h2">Nuestros productos</Typography>
-        </div>
-        <Grid item xs={12} md={12} lg={12} className={classes.productsContainer}>
-          <Grid container>
-            {products?.map((product, key) => (
-              <Grid key={key} item xs={12} md={6} lg={3}>
-                <Printer
-                  id={product.id}
-                  name={product.name}
-                  price={product.price}
-                  image={product.image}
-                  sku={product.sku}
-                  attributes={product.attributes}
-                />
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
-      </Grid>
+      <div>
+        <h2>Nuestros productos</h2>
+      </div>
+      <div className={classes.productsContainer}>
+        {products?.map((product, key) => (
+          <Printer
+            id={product.id}
+            name={product.name}
+            price={product.price}
+            image={product.image}
+            sku={product.sku}
+            attributes={product.attributes}
+          />
+        ))}
+      </div>
     </div>
   );
 };
