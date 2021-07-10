@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -33,10 +32,9 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 
 function Copyright() {
 	return (
-		<Typography variant="body2" color="textSecondary">
-			{'Copyright © '}
-			<Link color="inherit" href="https://material-ui.com/">
-				Your Website
+		<Typography color="textSecondary">
+			<Link color="inherit" href="https://docutecmdp.com/">
+				Docutec Mdp
 			</Link>{' '}
 			{new Date().getFullYear()}
 			{'.'}
@@ -49,10 +47,9 @@ const Footer: FunctionComponent<Props> = (props) => {
 
 	return (
 		<div className={classes.root}>
-			<CssBaseline />
 			<footer className={classes.footer}>
 				<Container maxWidth="sm">
-					<Typography variant="body1">Mas informacion acerca de Docutec mdp.</Typography>
+					<Typography>Mas informacion acerca de Docutec mdp.</Typography>
 					<Copyright />
 				</Container>
 			</footer>

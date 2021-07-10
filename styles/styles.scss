@@ -11,6 +11,9 @@ body {
   width: 100%;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
   background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   .navbar-section {
     max-width: 1280px;
