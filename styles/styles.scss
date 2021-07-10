@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+// navbar section
+.header-container {
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+  background: rgba(255, 255, 255, 0.95);
+
+  .navbar-section {
+    max-width: 1280px;
+    margin: auto;
+    .navbar-container {
+      padding: 0 0.6rem;
+      .navbar {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+
+        .site-logo img {
+          height: 3.5rem;
+        }
+
+        ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        ul li a {
+          color: #3f51b5;
+          padding: 20px;
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          &:hover {
+            background: rgba(173, 173, 173, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+// products catalog
+.products-section {
+  .products-header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 30rem;
+  }
+}

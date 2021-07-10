@@ -1,16 +1,16 @@
-import React, {FunctionComponent, useState} from 'react';
-import Avatar          from '@material-ui/core/Avatar';
-import Button          from '@material-ui/core/Button';
-import CssBaseline     from '@material-ui/core/CssBaseline';
-import TextField       from '@material-ui/core/TextField';
-import Link            from '@material-ui/core/Link';
-import Box             from '@material-ui/core/Box';
+import React, { FunctionComponent, useState } from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import Link from '@material-ui/core/Link';
+import Box from '@material-ui/core/Box';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import Typography      from '@material-ui/core/Typography';
-import {makeStyles}    from '@material-ui/core/styles';
-import Container       from '@material-ui/core/Container';
-import {CustomTheme} from '@theme/index';
-import {schema}      from '@utils/validations/contactForm';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import { CustomTheme } from '@theme/index';
+import { schema } from '@utils/validations/contactForm';
 
 interface OwnProps {
 }
@@ -18,31 +18,30 @@ interface OwnProps {
 type Props = OwnProps;
 
 const useStyles = makeStyles<CustomTheme>((theme) =>
-	({
-		paper: {
-			marginTop: theme.spacing(8),
-			display: 'flex',
-			flexDirection: 'column',
-			alignItems: 'center',
-		},
-		avatar: {
-			margin: theme.spacing(1),
-			backgroundColor: theme.palette.secondary.main,
-		},
-		form: {
-			width: '100%', // Fix IE 11 issue.
-			marginTop: theme.spacing(1),
-		},
-		submit: {
-			margin: theme.spacing(3, 0, 2),
-		},
-	})
+({
+	paper: {
+		marginTop: theme.spacing(8),
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+	},
+	avatar: {
+		margin: theme.spacing(1),
+		backgroundColor: theme.palette.secondary.main,
+	},
+	form: {
+		width: '100%', // Fix IE 11 issue.
+		marginTop: theme.spacing(1),
+	},
+	submit: {
+		margin: theme.spacing(3, 0, 2),
+	},
+})
 );
 
 function Copyright() {
 	return (
 		<Typography variant="body2" color="textSecondary" align="center">
-			{'Copyright © '}
 			<Link color="inherit" href="https://docutec.vercel.app/">
 				Docutec Mdp
 			</Link>{' '}
@@ -67,7 +66,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 		try {
 			await schema.validate({ name, email })
 			window.open(`mailto:${mailTo}?subject=${subject}&body=${message}`)
-		}catch (e) {
+		} catch (e) {
 			console.log('err validations', e)
 		}
 
@@ -75,10 +74,10 @@ const Contact: FunctionComponent<Props> = (props) => {
 
 	return (
 		<Container component="main" maxWidth="xs">
-			<CssBaseline/>
+			<CssBaseline />
 			<div className={classes.paper}>
 				<Avatar className={classes.avatar}>
-					<ContactMailIcon/>
+					<ContactMailIcon />
 				</Avatar>
 				<Typography component="h1" variant="h5">
 					Contactanos
@@ -93,7 +92,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 						label="Tu nombre"
 						name="name"
 						value={name}
-						onChange={({target}) => setName(target.value)}
+						onChange={({ target }) => setName(target.value)}
 						autoComplete="name"
 						autoFocus
 					/>
@@ -106,7 +105,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 						label="Email Address"
 						name="email"
 						value={email}
-						onChange={({target}) => setEmail(target.value)}
+						onChange={({ target }) => setEmail(target.value)}
 						autoComplete="email"
 						autoFocus
 					/>
@@ -119,7 +118,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 						label="Asunto"
 						name="subject"
 						value={subject}
-						onChange={({target}) => setSubject(target.value)}
+						onChange={({ target }) => setSubject(target.value)}
 						autoComplete="subject"
 						autoFocus
 					/>
@@ -132,7 +131,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 						label="Mensaje"
 						name="message"
 						value={message}
-						onChange={({target}) => setMessage(target.value)}
+						onChange={({ target }) => setMessage(target.value)}
 						autoComplete="message"
 						autoFocus
 					/>
@@ -148,7 +147,7 @@ const Contact: FunctionComponent<Props> = (props) => {
 				</form>
 			</div>
 			<Box mt={8}>
-				<Copyright/>
+				<Copyright />
 			</Box>
 		</Container>
 	);
