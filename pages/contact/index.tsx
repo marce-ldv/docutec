@@ -42,7 +42,6 @@ const useStyles = makeStyles<CustomTheme>((theme) =>
 function Copyright() {
 	return (
 		<Typography variant="body2" color="textSecondary" align="center">
-			{'Copyright © '}
 			<Link color="inherit" href="https://docutec.vercel.app/">
 				Docutec Mdp
 			</Link>{' '}

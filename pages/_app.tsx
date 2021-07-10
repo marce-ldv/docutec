@@ -2,16 +2,14 @@ import React, { useState } from 'react'
 import { AppProps } from 'next/app'
 import Layout from '@components/Layout'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core'
-import Switch from '@material-ui/core/Switch'
 import {
   orange,
-  lightBlue,
   deepPurple,
-  deepOrange
+  deepOrange,
 } from '@material-ui/core/colors'
+import '../styles/styles.scss';
 
 import theme from '../theme'
-import '../theme/stylesheetsGlobal.css'
 
 export function reportWebVitals(metric: any) {
   // console.log(metric)
@@ -20,20 +18,17 @@ export function reportWebVitals(metric: any) {
 function MyApp({ Component, pageProps }: AppProps) {
   const [darkState, setDarkState] = useState(false);
   const palletType = darkState ? "dark" : "light";
-  const mainPrimaryColor = darkState ? orange[500] : lightBlue[500];
+  const mainPrimaryColor = darkState ? orange[500] : '#3f51b5';
   const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
-  const navbarBackground = darkState ? '#000' : '#fff';
 
   const darkTheme = createMuiTheme({
     palette: {
       type: palletType,
       primary: {
         main: mainPrimaryColor,
-        navbar: navbarBackground,
       },
       secondary: {
         main: mainSecondaryColor,
-        navbar: navbarBackground,
       }
     }
   });
@@ -45,7 +40,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={darkTheme}>
       <Layout>
         <Component {...pageProps} />
-        <Switch checked={darkState} onChange={handleThemeChange} />
       </Layout>
     </ThemeProvider>
   )
