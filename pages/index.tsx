@@ -4,10 +4,8 @@ import { CustomTheme } from '@theme/index';
 import Aside from '@components/Aside';
 import ProductsSection from '@components/ProductsSection';
 
-interface OwnProps {
+interface Props {
 }
-
-type Props = OwnProps;
 
 const Home: FunctionComponent<Props> = (props) => {
 
@@ -37,7 +35,7 @@ const Home: FunctionComponent<Props> = (props) => {
 			<section className={classes.sectionContainer}>
 				<div style={{ textAlign: 'center' }}>
 					<div>
-						<h1>Lorem ipsum dolor sit amet.</h1>
+						<h1>Bienvenidos.</h1>
 					</div>
 					<div>
 						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem!</h5>
