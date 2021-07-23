@@ -13,15 +13,13 @@ const Home: FunctionComponent<Props> = (props) => {
 			{/* <div className={classes.header}>
 				<img src="/assets/landing.png" width="100%" alt="header" />
 			</div> */}
-			<Aside />
+			{/* <Aside /> */}
 			<section>
-				<div style={{ textAlign: 'center' }}>
-					<div>
-						<h1>Bienvenidos.</h1>
-					</div>
-					<div>
-						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem!</h5>
-					</div>
+				<div>
+					<h1>Bienvenidos.</h1>
+				</div>
+				<div>
+					<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem!</h5>
 				</div>
 			</section>
 			<ProductsSection />

@@ -2,6 +2,7 @@
 $primary-color: #3f51b5;
 $secondary-color: #ff9800;
 $white: #fff;
+$layout-max-witdh: 1700px;
 
 html,
 body {
@@ -13,14 +14,12 @@ body {
 
 // layout section
 .layout-container {
-  max-width: 1700px;
+  max-width: $layout-max-witdh;
   margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 67px;
+  padding: 1rem;
   box-sizing: border-box;
-  // display: flex;
-  // flex-direction: column;
   align-items: center;
-  // justify-content: center;
 }
 
 // navbar section
@@ -35,6 +34,10 @@ body {
   .navbar-section {
     max-width: 1280px;
     margin: auto;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    position: sticky;
+
     .navbar-container {
       padding: 0 0.6rem;
       .navbar {
@@ -55,7 +58,7 @@ body {
 
         ul li a {
           color: #3f51b5;
-          padding: 20px;
+          padding: 1.3rem;
           display: block;
           text-decoration: none;
           text-transform: uppercase;

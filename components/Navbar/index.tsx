@@ -1,10 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import Link from 'next/link';
 
-interface OwnProps {
+interface Props {
 }
-
-type Props = OwnProps;
 
 const Navbar: FunctionComponent<Props> = (props) => {
 
@@ -16,7 +14,6 @@ const Navbar: FunctionComponent<Props> = (props) => {
 						<Link href="/">
 							<a className="site-logo"><img src="/assets/docutec2.webp" alt="docutec-logo" /></a>
 						</Link>
-
 						<ul>
 							<li>
 								<Link href="/">
