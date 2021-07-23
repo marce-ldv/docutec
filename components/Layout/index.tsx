@@ -1,24 +1,18 @@
 import React, { FunctionComponent } from 'react';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer/footer';
-import { Container } from '@material-ui/core';
 
-
-interface OwnProps {
+interface Props {
 }
-
-type Props = OwnProps;
 
 const Layout: FunctionComponent<Props> = ({ children }) => {
 
 	return (
 		<>
 			<Navbar />
-			<Container style={{ marginTop: '64px' }}>
-				<div>
+				<div className="layout-container">
 					{children}
 				</div>
-			</Container>
 			<Footer />
 		</>
 	);

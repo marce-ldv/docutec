@@ -1,14 +1,8 @@
 import React, { useState } from 'react'
 import { AppProps } from 'next/app'
 import Layout from '@components/Layout'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core'
-import {
-  orange,
-  deepPurple,
-  deepOrange,
-} from '@material-ui/core/colors'
-import '../styles/styles.scss';
 
+import '../styles/styles.scss';
 import theme from '../theme'
 
 export function reportWebVitals(metric: any) {
@@ -18,30 +12,15 @@ export function reportWebVitals(metric: any) {
 function MyApp({ Component, pageProps }: AppProps) {
   const [darkState, setDarkState] = useState(false);
   const palletType = darkState ? "dark" : "light";
-  const mainPrimaryColor = darkState ? orange[500] : '#3f51b5';
-  const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
 
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: palletType,
-      primary: {
-        main: mainPrimaryColor,
-      },
-      secondary: {
-        main: mainSecondaryColor,
-      }
-    }
-  });
   const handleThemeChange = () => {
     setDarkState(!darkState);
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
 
@@ -57,4 +36,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;

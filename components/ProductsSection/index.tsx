@@ -1,11 +1,9 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import Printer from '@components/Printer';
-import Database from "@database";
+import Database from '@database';
 
-interface OwnProps {
+interface Props {
 }
-
-type Props = OwnProps;
 
 const ProductsSection: FunctionComponent<Props> = (props) => {
   const [products, setProducts] = useState<TProduct[]>([])
