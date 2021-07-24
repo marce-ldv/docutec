@@ -28,7 +28,7 @@ const Printer: FunctionComponent<Props> = (product) => {
 			<div className="card-content">
 				<div className="card-title">{product.name}</div>
 				<div className="card-subtitle">{product.price}</div>
-				<div className="card-description">{product.attributes?.description}</div>
+				{/* <div className="card-description">{product.attributes?.description}</div> */}
 			</div>
 		</div>
 	);
