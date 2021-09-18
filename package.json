@@ -16,15 +16,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
+    "bootstrap": "^5.0.0-beta3",
     "clsx": "^1.1.1",
     "next": "^9.5.3",
     "next-pwa": "^3.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-player": "^2.6.2",
+    "reactstrap": "^8.10.0",
     "sass": "^1.35.2",
     "yup": "^0.29.3"
   },

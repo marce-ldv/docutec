@@ -4,9 +4,14 @@
     "paths": {
       "@database": ["database/db.ts"],
       "@components/*": ["components/*"],
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
+      "@templates/*": ["templates/*"],
       "@theme/*": ["theme/*"],
       "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@tests/*": ["tests/*"],
     },
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],

@@ -1,0 +1,18 @@
+// products catalog
+.productsSection {
+  .productsHeader {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 30rem;
+  }
+}

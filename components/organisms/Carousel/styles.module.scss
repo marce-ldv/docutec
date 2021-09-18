@@ -1,0 +1,12 @@
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+
+  .itemLeft {
+    flex-basis: 60%;
+  }
+
+  .itemRight {
+    flex-basis: 40%;
+  }
+}
