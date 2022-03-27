@@ -1,37 +1,35 @@
 import React, { FunctionComponent } from 'react';
-import { CustomTheme } from '@theme/index';
-
 interface OwnProps {
-	id: string
-	image?: string
-	name: string
-	price?: number
-	sku?: string
-	attributes?: Attributes
+  id: string
+  image?: string
+  name: string
+  price?: number
+  sku?: string
+  attributes?: Attributes
 }
 
 interface Attributes {
-	description: string
+  description: string
 }
 
 type Props = OwnProps;
 
 const Printer: FunctionComponent<Props> = (product) => {
 
-	return (
-		<div className="card-container">
-			<div className="card-header">
-				<div className="card-image">
-					<img src={`/assets/${product?.image}`} alt={product.name} />
-				</div>
-			</div>
-			<div className="card-content">
-				<div className="card-title">{product.name}</div>
-				<div className="card-subtitle">{product.price}</div>
-				{/* <div className="card-description">{product.attributes?.description}</div> */}
-			</div>
-		</div>
-	);
+  return (
+    <div className="card-container">
+      <div className="card-header">
+        <div className="card-image">
+          <img src={`/assets/${product?.image}`} alt={product.name} />
+        </div>
+      </div>
+      <div className="card-content">
+        <div className="card-title">{product.name}</div>
+        <div className="card-subtitle">{product.price}</div>
+        {/* <div className="card-description">{product.attributes?.description}</div> */}
+      </div>
+    </div>
+  );
 };
 
 export default Printer;

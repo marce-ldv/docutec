@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { CustomTheme } from '@theme/index';
 import Header from '@components/Header';
 import ProductsSection from '@components/ProductsSection';
 

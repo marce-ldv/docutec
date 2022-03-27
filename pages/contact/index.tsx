@@ -1,7 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
-import { CustomTheme } from '@theme/index';
 import { schema } from '@utils/validations/contactForm';
-
 interface Props {
 }
 

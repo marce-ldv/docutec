@@ -1,6 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import { CustomTheme } from '@theme/index';
-
 interface Props {
 }
 
