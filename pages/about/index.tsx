@@ -1,9 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 
-interface OwnProps { }
-
-type Props = OwnProps;
+interface Props { }
 
 const About: FunctionComponent<Props> = (props) => {
 

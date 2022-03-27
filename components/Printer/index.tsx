@@ -1,16 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import { CustomTheme } from '@theme/index';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import { red } from '@material-ui/core/colors';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-
 
 interface OwnProps {
 	id: string
@@ -27,39 +16,27 @@ interface Attributes {
 
 type Props = OwnProps;
 
-const useStyles = makeStyles<CustomTheme>((theme) =>
-({
-	root: {
-		margin: '5px',
-		padding: '10px',
-		maxWidth: 345,
-	},
-	media: {
-		height: 0,
-		paddingTop: '56.25%', // 16:9
-	},
-	expand: {
-		transform: 'rotate(0deg)',
-		marginLeft: 'auto',
-		transition: theme.transitions.create('transform', {
-			duration: theme.transitions.duration.shortest,
-		}),
-	},
-	expandOpen: {
-		transform: 'rotate(180deg)',
-	},
-	avatar: {
-		backgroundColor: red[500],
-	},
-})
-);
-
 const Printer: FunctionComponent<Props> = (product) => {
-	const classes = useStyles();
 
 	return (
-		<Card className={classes.root}>
-			<CardHeader
+		<div className="card-container">
+			<div className="card-header">
+				<div className="card-image">
+					<img src={`/assets/${product?.image}`} alt={product.name} />
+				</div>
+			</div>
+			<div className="card-content">
+				<div className="card-title">{product.name}</div>
+				<div className="card-subtitle">{product.price}</div>
+				{/* <div className="card-description">{product.attributes?.description}</div> */}
+			</div>
+		</div>
+	);
+};
+
+export default Printer;
+
+{/* <CardHeader
 				avatar={
 					<Avatar aria-label="recipe" className={classes.avatar}>
 						W
@@ -82,9 +59,4 @@ const Printer: FunctionComponent<Props> = (product) => {
 				<Typography variant="body2" color="textSecondary" component="p">
 					{product.attributes?.description}
 				</Typography>
-			</CardContent>
-		</Card>
-	);
-};
-
-export default Printer;
+			</CardContent> */}
