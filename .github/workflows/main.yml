@@ -49,7 +49,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Build
-        run: CI= yarn export
+        run: yarn export
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
