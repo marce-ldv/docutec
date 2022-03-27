@@ -1,16 +1,15 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import { CustomTheme } from '@theme/index';
-import Aside from '@components/Aside';
+import Header from '@components/Header';
 import ProductsSection from '@components/ProductsSection';
 
-interface Props {
-}
+interface Props {}
 
-const Home: FunctionComponent<Props> = (props) => {
+const Home: FC<Props> = () => {
 
 	return (
 		<div>
-			{/* <Aside /> */}
+			{/* <Header /> */}
 			<section>
 				<div>
 					<h1>Bienvenidos.</h1>

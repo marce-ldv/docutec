@@ -25,19 +25,23 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'warn',
     'react-hooks/exhaustive-deps': 'off',
     'linebreak-style': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     'import/order': 'off',
     'react/button-has-type': 'off',
-    'react/react-in-jsx-scope': 'off',
+    // 'react/react-in-jsx-scope': 'off',
     'arrow-parens': 'off',
     'arrow-body-style': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-nested-ternary': 'off',
     'react/no-children-prop': 'off',
-    'jsx-a11y/label-has-associated-control': 'off',
-    'react/prop-types': 'warn',
     'no-noninteractive-element-to-interactive-role': 'off',
     'object-curly-newline': 'off',
+    "@typescript-eslint/no-empty-interface": [
+      "off",
+      {
+        "allowSingleExtends": false
+      }
+    ]
   },
   'overrides': [
     {
