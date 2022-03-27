@@ -22,7 +22,7 @@ const Home: FunctionComponent<Props> = (props) => {
 					<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem!</h5>
 				</div>
 			</section>
-			<ProductsSection />
+			{/* <ProductsSection /> */}
 		</div>
 	);
 };

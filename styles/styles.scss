@@ -1,6 +1,5 @@
 // Imports
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
 
 // Define variables
 $primary-color: #3f51b5;
@@ -8,12 +7,11 @@ $secondary-color: #ff9800;
 $white: #fff;
 $layout-max-witdh: 1700px;
 
-$font-family: "Roboto", sans-serif;
+$font-family: "Fira Sans", sans-serif;
 $font-size-base: 0.925rem;
 $base-color: #66f;
-$text-dark: #3c4250;
+$text-dark: #131314;
 $border-color: #eceef3;
-
 
 // navbar section
 $navbar-body-color: #fff;
@@ -38,7 +36,6 @@ $navbar-dropdown-separator-color: $border-color;
 
 // lorem
 
-
 html,
 body {
   padding: 0;
@@ -57,10 +54,10 @@ body {
 }
 
 // navbar section
-$font-family: "Roboto", sans-serif;
+$font-family: "Fira Sans", sans-serif;
 $font-size-base: 0.925rem;
 $base-color: #66f;
-$text-dark: #3c4250;
+$text-dark: #151618;
 $border-color: #eceef3;
 
 $navbar-body-color: #fff;
@@ -262,8 +259,7 @@ a {
           li {
             a {
               color: $text-dark;
-              padding: $navbar-dropdown-item-padding-y
-                $navbar-dropdown-item-padding-x;
+              padding: $navbar-dropdown-item-padding-y $navbar-dropdown-item-padding-x;
               display: block;
             }
           }
@@ -327,9 +323,8 @@ a {
   height: 100%;
   padding: 1rem;
   margin: 0;
-  background-color: 'tomato';
   // border: 1px solid #000;
-  border-radius: 40px;
+  border-radius: 2px;
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 
   .card-header {

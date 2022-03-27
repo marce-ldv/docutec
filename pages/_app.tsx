@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import { AppProps } from 'next/app'
 import Layout from '@components/Layout'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/styles.scss';
-import theme from '../theme'
+// import theme from '../theme'
 
 export function reportWebVitals(metric: any) {
   // console.log(metric)
@@ -12,7 +11,7 @@ export function reportWebVitals(metric: any) {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [darkState, setDarkState] = useState(false);
-  const palletType = darkState ? "dark" : "light";
+  // const palletType = darkState ? "dark" : "light";
 
   const handleThemeChange = () => {
     setDarkState(!darkState);
