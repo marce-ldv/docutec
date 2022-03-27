@@ -10,16 +10,13 @@ const Home: FunctionComponent<Props> = (props) => {
 
 	return (
 		<div>
-			{/* <div className={classes.header}>
-				<img src="/assets/landing.png" width="100%" alt="header" />
-			</div> */}
 			{/* <Aside /> */}
 			<section>
 				<div>
 					<h1>Bienvenidos.</h1>
 				</div>
 				<div>
-					<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem!</h5>
+					<h5>Este sitio esta en desarrollo!</h5>
 				</div>
 			</section>
 			{/* <ProductsSection /> */}

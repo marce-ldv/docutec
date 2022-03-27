@@ -9,7 +9,7 @@ export function reportWebVitals(metric: any) {
   // console.log(metric)
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const [darkState, setDarkState] = useState(false);
   // const palletType = darkState ? "dark" : "light";
 
